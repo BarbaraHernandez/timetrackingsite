@@ -1,0 +1,133 @@
+<!doctype HTML>
+<html lang=en>
+    <head>
+        <title>Home Care Institute TimeTracking</title>
+        <link rel="stylesheet" href="assets/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Notable|Shanti" rel="stylesheet">
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
+        <div id="banner">
+            <div class="text-center">                
+                <img id="logo" src="assets/images/HCI_Logo_Centered.png">
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+            <a class="navbar-brand" href="index.html">Home Care Institute</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse custom-nav" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="mytable.html">My Time Sheets</a>
+                </div>
+            </div>
+        </nav>
+
+        
+        <div class="container-fluid" id="greeting">
+            <div class="row">
+                <div class="col-sm-8">
+                    <p>Hi,</p>
+                    <p id="account-name" class="important">Gorgeous</p>
+                </div>
+                <div class="col-sm-2">
+                    <p>Today's Date:</p>
+                    <p id="today-date" class="important"></p>
+                </div>
+                <div class="col-sm-2">
+                    <p>The Next Payday is:</p>
+                    <p id="next-payday"class="important"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="user-summary">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">                        
+                        <div class="card-body text-center">
+                            <p id="user-hour-sum" class="text-graphic"></p>
+                            <h5 class="card-title">Hours this Pay Period</h5>
+                            <p class="card-text"></p>
+                            <a href="mytable.html" class="btn btn-warning">Edit Time Sheet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <p id="user-vacation-left" class="text-graphic"></p>
+                            <h5 class="card-title">Vacation Days Available</h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-warning">View Vacation policy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <p id="user-sick-left" class="text-graphic"></p>
+                            <h5 class="card-title">Sick Days Available</h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-warning">View Sick Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="team-summary">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card no-border">
+                        <h5 class="card-header">Barbara</h5>
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-graphic">40</h5>
+                            <p class="card-text">Includes:</p>
+                            <p class="card-text"> Hours of Vacation: <span id="barbara-vacay-taken">none</span></p>
+                            <p class="card-text"> Hours of Sick Time: <span id="barbara-sick-taken">none</span></p>
+                            <a href="#" class="btn btn-warning">See Time Sheet</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card no-border">
+                        <h5 class="card-header">Holly</h5>
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-graphic">40</h5>
+                            <p class="card-text">Includes:</p>
+                            <p class="card-text"> Hours of Vacation: <span id="holly-vacay-taken">none</span></p>
+                            <p class="card-text"> Hours of Sick Time: <span id="holly-sick-taken">none</span></p>
+                            <a href="#" class="btn btn-warning">See Time Sheet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card no-border">
+                        <h5 class="card-header">Melissa</h5>
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-graphic">40</h5>
+                            <p class="card-text">Includes:</p>
+                            <p class="card-text"> Hours of Vacation: <span id="melissa-vacay-taken">none</span></p>
+                            <p class="card-text"> Hours of Sick Time: <span id="melissa-sick-taken">none</span></p>
+                            <a href="#" class="btn btn-warning">See Time Sheet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Script links-->
+        <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+        <script src="assets/moment.js"></script>
+        <script src="assets/myScripts.js"></script>
+    </body>
+</html>

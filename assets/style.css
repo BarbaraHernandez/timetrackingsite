@@ -1,0 +1,83 @@
+body {
+    background-color: #D81E4B;
+    color:#fff;
+}
+
+img{
+    margin:auto;
+}
+
+
+#banner{
+    width:100%;
+    background-color:#fff;
+    align-content: center;
+    margin:auto;
+}
+
+#logo{
+    max-width: 250px;
+}
+
+a
+a:hover{
+    color: #fff;
+}
+
+
+.custom-nav {
+    background-color: #ae183c;
+}
+
+.card {
+    color:#3f4444;
+}
+
+.card-header {
+    background-color: #ae183c;
+    color: #fff;
+}
+
+#greeting {
+    margin-top:35px;
+    margin-bottom:45px;
+}
+
+#user-summary {
+    margin-bottom: 20px;
+}
+
+#team-summary {
+    margin-bottom: 20px;
+}
+
+.important {
+    font-size: 150%;
+}
+
+.text-graphic{
+    font-size:100px;
+    font-family: 'Notable','Times New Roman', Times, serif;
+}
+
+.no-border{
+    border: none;
+}
+
+.timesheet-date{
+    font-size: 20px;
+}
+
+.current-timesheet-card{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border:none;
+}
+
+.timesheet-head{
+    border: 1.5px solid black;
+}
+
+#summary{
+    border-bottom: 100px;
+}

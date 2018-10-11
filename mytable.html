@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <title>My Hours</title>
+        <link rel="stylesheet" href="assets/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Notable|Shanti" rel="stylesheet">
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
+      <div id="banner">
+          <div class="text-center">                
+              <img id="logo" src="assets/images/HCI_Logo_Centered.png">
+          </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+          <a class="navbar-brand" href="index.html">Home Care Institute</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse custom-nav" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                  <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link active" href="mytable.html">My Time Sheets</a>
+              </div>
+          </div>
+      </nav>
+      <div class = "container col-xl-11">
+        <div class = "row">
+          <div class = "col">
+            <div class = "card current-timesheet-card">
+              <form>
+                <table class="table table-bordered">
+                  <thead class="thead-dark timeshee-head">
+                    <tr>
+                      <th scope="col">Saturday</th>
+                      <th scope="col">Sunday</th>
+                      <th scope="col">Monday</th>
+                      <th scope="col">Tuesday</th>
+                      <th scope="col">Wednesday</th>
+                      <th scope="col">Thursday</th>
+                      <th scope="col">Friday</th>
+                    </tr>
+                  </thead>
+                  <tbody>                  
+                    <tr id="week-1">
+                      <td>
+                        <div class="form-group text-center">
+                          <p class="timesheet-date">Sep 29th</p>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-business-time"></i></div>
+                            </div>
+                            <input type="text" class="form-control h1" id="inlineFormInputGroup" placeholder="Regular">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-umbrella-beach"></i></div>
+                            </div>
+                            <input type="text" class="form-control v1" id="inlineFormInputGroup" placeholder="Vacation">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-hospital-alt"></i></div>
+                            </div>
+                            <input type="text" class="form-control s1" id="inlineFormInputGroup" placeholder="Sick Time">
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group text-center">
+                          <p class="timesheet-date">Sep 30th</p>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-business-time"></i></div>
+                            </div>
+                            <input type="text" class="form-control h2" id="inlineFormInputGroup" placeholder="Regular">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-umbrella-beach"></i></div>
+                            </div>
+                            <input type="text" class="form-control v2" id="inlineFormInputGroup" placeholder="Vacation">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-hospital-alt"></i></div>
+                            </div>
+                            <input type="text" class="form-control s2" id="inlineFormInputGroup" placeholder="Sick Time">
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group text-center">
+                          <p class="timesheet-date">Oct 1st</p>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-business-time"></i></div>
+                            </div>
+                            <input type="text" class="form-control h3" id="inlineFormInputGroup" placeholder="Regular">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-umbrella-beach"></i></div>
+                            </div>
+                            <input type="text" class="form-control v3" id="inlineFormInputGroup" placeholder="Vacation">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-hospital-alt"></i></div>
+                            </div>
+                            <input type="text" class="form-control s3" id="inlineFormInputGroup" placeholder="Sick Time">
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group text-center">
+                          <p class="timesheet-date">Oct 2nd</p>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-business-time"></i></div>
+                            </div>
+                            <input type="text" class="form-control h4" id="inlineFormInputGroup" placeholder="Regular">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-umbrella-beach"></i></div>
+                            </div>
+                            <input type="text" class="form-control v4" id="inlineFormInputGroup" placeholder="Vacation">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-hospital-alt"></i></div>
+                            </div>
+                            <input type="text" class="form-control s4" id="inlineFormInputGroup" placeholder="Sick Time">
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group text-center">
+                          <p class="timesheet-date">Oct 3rd</p>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-business-time"></i></div>
+                            </div>
+                            <input type="text" class="form-control h5" id="inlineFormInputGroup" placeholder="Regular">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-umbrella-beach"></i></div>
+                            </div>
+                            <input type="text" class="form-control v5" id="inlineFormInputGroup" placeholder="Vacation">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-hospital-alt"></i></div>
+                            </div>
+                            <input type="text" class="form-control s5" id="inlineFormInputGroup" placeholder="Sick Time">
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group text-center">
+                          <p class="timesheet-date">Oct 4th</p>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-business-time"></i></div>
+                            </div>
+                            <input type="text" class="form-control h6" id="inlineFormInputGroup" placeholder="Regular">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-umbrella-beach"></i></div>
+                            </div>
+                            <input type="text" class="form-control v6" id="inlineFormInputGroup" placeholder="Vacation">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-hospital-alt"></i></div>
+                            </div>
+                            <input type="text" class="form-control s6" id="inlineFormInputGroup" placeholder="Sick Time">
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group text-center">
+                          <p class="timesheet-date">Oct 5th</p>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-business-time"></i></div>
+                            </div>
+                            <input type="text" class="form-control h7" id="inlineFormInputGroup" placeholder="Regular">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-umbrella-beach"></i></div>
+                            </div>
+                            <input type="text" class="form-control v7" id="inlineFormInputGroup" placeholder="Vacation">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-hospital-alt"></i></div>
+                            </div>
+                            <input type="text" class="form-control s7" id="inlineFormInputGroup" placeholder="Sick Time">
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr id="week-2">
+                      <td>
+                        <div class="form-group text-center">
+                          <p class="timesheet-date">Oct 6th</p>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-business-time"></i></div>
+                            </div>
+                            <input type="text" class="form-control h8" id="inlineFormInputGroup" placeholder="Regular">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-umbrella-beach"></i></div>
+                            </div>
+                            <input type="text" class="form-control v8" id="inlineFormInputGroup" placeholder="Vacation">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-hospital-alt"></i></div>
+                            </div>
+                            <input type="text" class="form-control s8" id="inlineFormInputGroup" placeholder="Sick Time">
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group text-center">
+                          <p class="timesheet-date">Oct 7th</p>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-business-time"></i></div>
+                            </div>
+                            <input type="text" class="form-control h9" id="inlineFormInputGroup" placeholder="Regular">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-umbrella-beach"></i></div>
+                            </div>
+                            <input type="text" class="form-control v9" id="inlineFormInputGroup" placeholder="Vacation">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-hospital-alt"></i></div>
+                            </div>
+                            <input type="text" class="form-control s9" id="inlineFormInputGroup" placeholder="Sick Time">
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group text-center">
+                          <p class="timesheet-date">Oct 8th</p>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-business-time"></i></div>
+                            </div>
+                            <input type="text" class="form-control h10" id="inlineFormInputGroup" placeholder="Regular">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-umbrella-beach"></i></div>
+                            </div>
+                            <input type="text" class="form-control v10" id="inlineFormInputGroup" placeholder="Vacation">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-hospital-alt"></i></div>
+                            </div>
+                            <input type="text" class="form-control s10" id="inlineFormInputGroup" placeholder="Sick Time">
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group text-center">
+                          <p class="timesheet-date">Oct 9th</p>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-business-time"></i></div>
+                            </div>
+                            <input type="text" class="form-control h11" id="inlineFormInputGroup" placeholder="Regular">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-umbrella-beach"></i></div>
+                            </div>
+                            <input type="text" class="form-control v11" id="inlineFormInputGroup" placeholder="Vacation">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-hospital-alt"></i></div>
+                            </div>
+                            <input type="text" class="form-control s11" id="inlineFormInputGroup" placeholder="Sick Time">
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group text-center">
+                          <p class="timesheet-date">Oct 10th</p>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-business-time"></i></div>
+                            </div>
+                            <input type="text" class="form-control h12" id="inlineFormInputGroup" placeholder="Regular">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-umbrella-beach"></i></div>
+                            </div>
+                            <input type="text" class="form-control v12" id="inlineFormInputGroup" placeholder="Vacation">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-hospital-alt"></i></div>
+                            </div>
+                            <input type="text" class="form-control s12" id="inlineFormInputGroup" placeholder="Sick Time">
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group text-center">
+                          <p class="timesheet-date">Oct 11th</p>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-business-time"></i></div>
+                            </div>
+                            <input type="text" class="form-control h13" id="inlineFormInputGroup" placeholder="Regular">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-umbrella-beach"></i></div>
+                            </div>
+                            <input type="text" class="form-control v13" id="inlineFormInputGroup" placeholder="Vacation">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-hospital-alt"></i></div>
+                            </div>
+                            <input type="text" class="form-control s13" id="inlineFormInputGroup" placeholder="Sick Time">
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="form-group text-center">
+                          <p class="timesheet-date">Oct 12th</p>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-business-time"></i></div>
+                            </div>
+                            <input type="text" class="form-control h14" id="inlineFormInputGroup" placeholder="Regular">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-umbrella-beach"></i></div>
+                            </div>
+                            <input type="text" class="form-control v14" id="inlineFormInputGroup" placeholder="Vacation">
+                          </div>
+                          <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <div class="input-group-text"><i class="fas fa-hospital-alt"></i></div>
+                            </div>
+                            <input type="text" class="form-control s14" id="inlineFormInputGroup" placeholder="Sick Time">
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <button type="submit" class="btn btn-warning" id="time-enter">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="summary">
+          <div class="row">
+            <div class="col-sm-4">
+                <div class="card no-border">
+                    <h5 class="card-header">Total Hours</h5>
+                    <div class="card-body text-center">
+                      <p id="user-hour-sum" class="text-graphic"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card no-border">
+                    <h5 class="card-header">Vacation</h5>
+                    <div class="card-body text-center">
+                      <p id="vacation-sum" class="text-graphic"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card no-border">
+                    <h5 class="card-header">Sick Time</h5>
+                    <div class="card-body text-center">
+                      <p id="sick-sum" class="text-graphic"></p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- script links -->
+      <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+      <script src="assets/myScripts.js"></script>
+      <script src="assets/moment.js"></script>
+    </body>
+</html>
