@@ -18,7 +18,7 @@ $(document).ready(function(){
 
     var employeeName="Anne Admin";
 
-    var todayDate = moment().format("MMM Do YYYY");
+    const todayDate = moment().format("MMM Do YYYY");
 
     var currentHoursTotal = 0;
 
@@ -61,7 +61,6 @@ $(document).ready(function(){
     function writeSick(){
         var sickDaysAvailable = sickAvailable / 8;
         $("#user-sick-left").text(sickDaysAvailable);
-
     }
 
     function writeTotalHours(){
@@ -76,6 +75,32 @@ $(document).ready(function(){
         $("#vacation-sum").text(vacaySum);
     }
 
+    //define pay period
+    const payperiod = 14;
+    const payperiodStart = moment('2018-12-28');
+
+    //determine current payperiod
+    const timeSince = moment().diff(payperiodStart, 'days');
+    const paycheckNumber = Math.floor(timeSince/payperiod);
+    const lastPayday = payperiodStart.add(paycheckNumber*payperiod, 'days');
+
+    //logging only
+    const payStartFormatted = payperiodStart.format('MMM Do YYYY');
+    console.log("pay start: "+payStartFormatted)
+    console.log("days since start: " + timeSince);
+    console.log("paychecks written: " + paycheckNumber);
+    console.log("last pay was "+moment(lastPayday).format('MMM Do YYYY'));
+
+
+
+    function writePayDay(){        
+        let payday = lastPayday.add(payperiod, 'days');
+        let paydayDisplay = payday.format('MMMM Do');        
+        $("#next-payday").text(paydayDisplay);
+    };
+
+    writePayDay();
+
     writeDate();
     writeName();
     writeHours();
@@ -83,30 +108,6 @@ $(document).ready(function(){
     writeSick();
     writeSickSum();
     writeVacaySum();
-
-    //define pay period
-    var payperiod = 14;
-    var paycheckNumber = 1;
-    var lastPayday = moment([2018, 09, 05]);
-    var payperiodStart = moment([2018, 09, 01]);
-    var payStartFormatted = moment(payperiodStart).format('MMM do YYYY');
-    console.log("pay start: "+payStartFormatted)
-
-    var timeSince = moment().diff(payperiodStart, 'days');
-    console.log("days since start: " + timeSince);
-
-    console.log("last pay was "+moment(lastPayday).format('MMM do YYYY'));
-    var payday = moment(lastPayday).add(7, 'days');
-    var paydayDisplay = moment(payday).format('MMMM do');
-    console.log("payday is " + moment(payday).format('MMMM do'));
-
-    function writePayDay(){
-        $("#next-payday").text(paydayDisplay);
-    }
-
-    writePayDay();
-
-
 
     //write dates automatically to timesheet
 
