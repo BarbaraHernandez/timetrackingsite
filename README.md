@@ -1,4 +1,4 @@
-# Time Tracking
+# Time Tracking - Static Design Mock-Up
 ## Real world time tracking solution
 
 [live demo](http://barbarahernandez.github.io/timetrackingsite)
@@ -8,3 +8,5 @@ This application was created for use by a small company with very straightforwar
 
 ### About Design
 This application uses bootstrap, but also a lot of custom branding for the intended company. The layout is intended to be easily understood and as quick as possible for users to view and edit time sheets.
+
+This is a static design mock up which includes features which, in production will be separated out into Employee and Administrator views.
